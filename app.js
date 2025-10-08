@@ -47,5 +47,19 @@ function onwfunction() {
   });
 }
 
+function clearFunction() {
+  listSheets.forEach((element) => {
+    element.clearFilterAsync("State");
+  });
+}
+
+function undoFunction() {
+  viz.undoAsync();
+}
+
 // Step 3: attach the functions to event listeners
 onwButton.addEventListener("click", onwfunction);
+
+clearButton.addEventListener("click", clearFunction);
+
+undoButton.addEventListener("click", undoFunction);

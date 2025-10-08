@@ -1,0 +1,80 @@
+/* Apply a jewel-toned gradient background */
+body {
+  margin: 0;
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background: linear-gradient(135deg, #2c003e, #004d61, #006d77, #8b005d);
+  color: #f4f4f9;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Headline styling */
+h1 {
+  margin-top: 2rem;
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #ffd166; /* golden topaz jewel tone */
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+/* Fieldset container */
+fieldset {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  border: 2px solid #00a896; /* emerald accent */
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+legend {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #06d6a0; /* emerald jewel tone */
+  padding: 0 0.5rem;
+}
+
+/* Buttons */
+input[type="button"] {
+  background: linear-gradient(135deg, #7209b7, #560bad); /* amethyst */
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  margin: 0.5rem;
+  border-radius: 0.75rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
+}
+
+input[type="button"]:hover {
+  background: linear-gradient(
+    135deg,
+    #3a0ca3,
+    #480ca8
+  ); /* deeper jewel hover */
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.35);
+}
+
+input[type="button"]:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Tableau viz container */
+div {
+  display: flex;
+  justify-content: center; /* centers horizontally */
+  align-items: center; /* centers vertically */
+  padding: 1rem;
+}
+
+tableau-viz {
+  border: 3px solid #118ab2; /* sapphire accent */
+  border-radius: 1rem;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
